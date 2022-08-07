@@ -7,5 +7,5 @@ hosts: qa
 
    - name: Copying the webapp file into the jboss server
      copy: src={{item}} dest=/home/centosuser/apps/softwares/jboss-4.2.3.GA/server/test/deploy/test.war mode=0664
-     with_fileglob: "/var/lib/jenkins/workspace/test/webapp/target/webapp-0.5*.war"
+
 
