@@ -6,6 +6,5 @@ hosts: qa
      copy: src=/home/centosuser/apps/softwares/jboss-4.2.3.GA/server/test/deploy/test.war dest=/home/centosuser/apps/backup/test-{{ date }}.war remote_src=yes
 
    - name: Copying the webapp file into the jboss server
-     copy: src={{item}} dest=/home/centosuser/apps/softwares/jboss-4.2.3.GA/server/test/deploy/test.war mode=0664
 
 
